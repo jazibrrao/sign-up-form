@@ -1,7 +1,7 @@
 :root {
-    --header: ;
-    --main: ;
-    --footer: ;
+    --header: 35vh;
+    --footer: 35vh;
+    --main: calc(100vh - calc(var(--header) + var(--footer)));
 }
 
 html {
@@ -21,16 +21,19 @@ label {
     display: flex;
     flex-direction: column;
     float: left;
-    margin-right: 10px;
+    margin-right: 2vw;
 }
 
 #right {
     margin-left: 40vw;
 }
 
+#right > * {
+    padding: 2vw;
+}
+
 #left {
     display: flex;
-    float: left;
     position: absolute;
 }
 
@@ -38,4 +41,23 @@ img {
     padding-top: 0;
     height: 100vh;
     width: 40vw;
+}
+
+#header {
+    height: var(--header);
+    background-color: #c8e1cc;
+}
+
+p:first-of-type {
+    padding: 15vh 15vw 5vh 0;
+}
+
+#main {
+    height: var(--main);
+    background-color: #b8d8be;
+}
+
+#footer {
+    background-color: #c8e1cc;
+    height: var(--footer);
 }

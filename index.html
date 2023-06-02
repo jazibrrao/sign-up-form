@@ -12,11 +12,11 @@
         <img src="banner.jpg" caption="text"/>
     </div>
     <div id="right">
-        <div class="header">
-            <p>This is not a real online service! You need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+        <header id="header">
+            <p>This is not a real online service! You need something like this in your life to help you realize your deepest dreams.<br>Sign up <em>now</em> to get started.</p>
             <p>You <em>know</em> you want to.</p>
-        </div>
-        <div class="main">
+        </header>
+        <main id="main">
             <form action="https://google.com" method="">
                 <h3>Let's do this!</h3>
                 <div class="column">
@@ -25,7 +25,7 @@
                     <label for="email">Email</label>
                     <input type="email" name="" id="email" required>
                     <label for="password">Password</label>
-                    <input type="password" name="pw" id="pw" required>
+                    <input type="password" name="pw" id="pw" class="error" required>
                     <button type="submit">Create Account</button>
                 </div>
                 <div class="column">
@@ -34,13 +34,13 @@
                     <label for="tel">Phone Number</label>
                     <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="123-456-7890" required>
                     <label for="pwConfirm">Confirm Password</label>
-                    <input type="password" name="pwConfirm" id="pwConfirm" required>
+                    <input type="password" name="pwConfirm" id="pwConfirm" class="error" required>
                 </div>
             </form>
-        </div>
-        <div class="footer">
+        </main>
+        <footer id="footer">
             <p>Already have an account? <a>Log in</a></p>
-        </div>
+        </footer>
     </div>
 </body>
 </html>

@@ -1,0 +1,41 @@
+:root {
+    --header: ;
+    --main: ;
+    --footer: ;
+}
+
+html {
+    overflow: hidden;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+label {
+    text-transform: uppercase;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-right: 10px;
+}
+
+#right {
+    margin-left: 40vw;
+}
+
+#left {
+    display: flex;
+    float: left;
+    position: absolute;
+}
+
+img {
+    padding-top: 0;
+    height: 100vh;
+    width: 40vw;
+}

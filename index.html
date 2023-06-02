@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign-Up Form</title>
+</head>
+<body>
+    <div id="left">
+        <img src="banner.jpg" caption="text"/>
+    </div>
+    <div id="right">
+        <div class="header">
+            <p>This is not a real online service! You need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+            <p>You <em>know</em> you want to.</p>
+        </div>
+        <div class="main">
+            <form action="https://google.com" method="">
+                <h3>Let's do this!</h3>
+                <div class="column">
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" id="firstName" required>
+                    <label for="email">Email</label>
+                    <input type="email" name="" id="email" required>
+                    <label for="password">Password</label>
+                    <input type="password" name="pw" id="pw" required>
+                    <button type="submit">Create Account</button>
+                </div>
+                <div class="column">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" id="lastName" required>
+                    <label for="tel">Phone Number</label>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="123-456-7890" required>
+                    <label for="pwConfirm">Confirm Password</label>
+                    <input type="password" name="pwConfirm" id="pwConfirm" required>
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+            <p>Already have an account? <a>Log in</a></p>
+        </div>
+    </div>
+</body>
+</html>

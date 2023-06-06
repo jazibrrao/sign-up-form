@@ -1,20 +1,32 @@
 :root {
-    --header: 35vh;
-    --footer: 35vh;
+    --header: 30vh;
+    --footer: 40vh;
     --main: calc(100vh - calc(var(--header) + var(--footer)));
 }
 
 html {
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 *{
     margin:0;
     padding:0;
+    font-family: "PT Sans";
+}
+
+h3 {
+    padding-bottom: 3vh;
 }
 
 label {
     text-transform: uppercase;
+    font-size: 0.6rem;
+    padding-top: 1vh;
+}
+
+input {
+    width: 15vw;
 }
 
 .column {
@@ -38,7 +50,6 @@ label {
 }
 
 img {
-    padding-top: 0;
     height: 100vh;
     width: 40vw;
 }
@@ -49,7 +60,7 @@ img {
 }
 
 p:first-of-type {
-    padding: 15vh 15vw 5vh 0;
+    margin: 10vh 15vw 5vh 0; 
 }
 
 #main {
@@ -60,4 +71,20 @@ p:first-of-type {
 #footer {
     background-color: #c8e1cc;
     height: var(--footer);
+    margin-bottom: 5vh;
 }
+
+button {
+    margin-top: 13vh;
+    border-radius: 5px;
+    width: 16vw;
+    height: 5vh;
+    background-color: green;
+    color: white;
+}
+
+/*
+form::after {
+    content: "Already have an account? Log in";
+}
+*/

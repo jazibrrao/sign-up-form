@@ -12,6 +12,10 @@
 </head>
 <body>
     <div id="left">
+        <div id="logo">
+            <img id="tree-logo" src="tree-logo.png">
+            <span id="title">Openscape</span>
+        </div>
         <img src="banner.jpg" caption="text"/>
     </div>
     <div id="right">
@@ -20,29 +24,29 @@
             You <em>know</em> you want to.</p>
         </header>
         <main id="main">
-            <form action="https://google.com" method="">
-                <h3>Let's do this!</h3>
+            <form action="https://google.com" method="" id="signup">
+                <h1>Let's do this!</h1>
                 <div class="column">
                     <label for="firstName">First Name</label>
-                    <input type="text" name="firstName" id="firstName" required>
+                    <input type="text" name="firstName" id="firstName">
                     <label for="email">Email</label>
-                    <input type="email" name="" id="email" required>
+                    <input type="email" name="" id="email">
                     <label for="password">Password</label>
                     <input type="password" name="pw" id="pw" class="error" required>
-                    <button type="submit">Create Account</button>
                 </div>
                 <div class="column">
                     <label for="lastName">Last Name</label>
-                    <input type="text" name="lastName" id="lastName" required>
+                    <input type="text" name="lastName" id="lastName">
                     <label for="tel">Phone Number</label>
-                    <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="123-456-7890" required>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="123-456-7890">
                     <label for="pwConfirm">Confirm Password</label>
                     <input type="password" name="pwConfirm" id="pwConfirm" class="error" required>
                 </div>
             </form>
         </main>
         <footer id="footer">
-            <p>Already have an account? <a>Log in</a></p>
+            <button type="submit" form="signup">Create Account</button>
+            <p>Already have an account? <a href="https://www.theodinproject.com/users/sign_in">Log in</a></p>
         </footer>
     </div>
 </body>
